@@ -51,9 +51,9 @@
 
     <div id="socialmedia">
 
-        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img src="https://img.icons8.com/material-outlined/30/null/facebook-new.png"></a>
-        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img src="https://img.icons8.com/fluency-systems-regular/30/null/twitter.png"></a>
-        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/null/instagram-new.png"></a>
+        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img id="facebook" onmouseover="changeFb()" onmouseout="resetFb()" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png"></a>
+        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img id="twitter" onmouseover="changeTwit()" onmouseout="resetTwit()" src="https://img.icons8.com/fluency-systems-regular/30/FFFFFF/twitter.png"></a>
+        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img id="instagram" onmouseover="changeInsta()" onmouseout="resetInsta()" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png"></a>
 
     </div>    
 
@@ -71,7 +71,7 @@
 
             <h1>We are StartUp Creative Kucra Agency</h1>
 
-            <p>
+            <p class="p1">
                 Carefully crafter after analysing the needs of different industries and the design achieves a 
                 great balance between purpose & presentation
             </p>
@@ -99,13 +99,13 @@
 
     <!-- ----------- SECTION 2 : PRODUCT FEATURES ------------------- -->
 
-    <section id="productFeatures">
+    <section id="section2">
 
-        <div id="titleProducts">
+        <div class="titleProducts">
 
             <h2>Products Features</h2>
 
-            <p>
+            <p class="p1">
                 It is a long established fact that a reader will be of a page when established fact looking at its layout
             </p>
 
@@ -116,7 +116,7 @@
 
             <div class="products">
 
-                <img src="https://img.icons8.com/ios/50/FFFFFF/green-earth.png">
+                <img class="logoProduct" src="https://img.icons8.com/ios/50/FFFFFF/green-earth.png">
 
                 <h3>Digital Design</h3>
 
@@ -130,7 +130,7 @@
 
             <div class="products">
 
-                <img src="https://img.icons8.com/ios/50/FFFFFF/paint-brush.png">
+                <img class="logoProduct" src="https://img.icons8.com/ios/50/FFFFFF/paint-brush.png">
 
                 <h3>Unlimited Colors</h3>
 
@@ -144,7 +144,7 @@
 
             <div class="products">
 
-                <img src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/50/FFFFFF/external-chess-pieces-games-smashingstocks-glyph-smashing-stocks.png">
+                <img class="logoProduct" src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/50/FFFFFF/external-chess-pieces-games-smashingstocks-glyph-smashing-stocks.png">
 
                 <h3>Strategy Solutions</h3>
                 
@@ -158,9 +158,89 @@
 
         </div>
 
+        
+
+    </section>
+
+ <!------------------------ SECTION 3 : HOW IT WORKS ------------------------>
+
+    <section id="section3">
+
+        <div class="titleProducts">
+
+            <h2>How it works ?</h2>
+
+            <p class="p1">
+                It is a long established fact that a reader will be of a page when established fact looking at its layout
+            </p>
+
+    </div>
+
+    </section>
+
+
+<!-- SECTION 4 : LE PERSONNEL -->
+
+
+    <section id="section4">
+
+        <!-- les 2 paragraphes -->
+
+        <div id ="team">
+
+            <p class="p1">We'r dynamic team of talented people of innovative & marketing expert</p>
+
+            <p class="p1">
+               To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. if several languages of
+               the resulting language.
+            </p>
+
+        </div>         
+
+        <!-- Les membres -->
+
+        <div id="members">
+
+            <div>
+
+                <b>1499+</b>
+                <p class ="p2">Complète projects</p>
+
+            <img class ="photo" src = "img/person1.png">
+
+            </div>
+
+            <div>
+
+                <b>1080K</b>
+                <p class ="p2">Satisfied Clients</p>
+                <img class ="photo" src = "img/person2.png">
+
+            </div>
+
+            <div>
+
+                <b>608</b>
+                <p class ="p2">Team Members</p>
+                <img class ="photo" src = "img/person3.png">
+
+            </div>
+
+            <div>
+
+                <b>252</b>
+                <p class ="p2">Employee</p>
+                <img class ="photo" src = "img/person4.png">
+
+            </div>
+
+        </div>
+
     </section>
 
 </main>
+
+<script src="script.js"></script>
     
 </body>
 

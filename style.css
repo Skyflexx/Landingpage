@@ -2,11 +2,13 @@
     box-sizing: border-box;
     vertical-align: top;
     font-family: 'Lora', serif;
+    margin : 0;
+    padding : 0;
+    
 }
 
 #wrapper1{
-    margin : 0;
-    padding : 0;
+    
     background-image : radial-gradient(rgb(139, 195, 245), #1294b8);    
 }
 
@@ -23,7 +25,8 @@ header{
 
 /*  Taille de la grenouille */
 #frog{
-    width : 150px;    
+    width : 150px;
+    margin-left : 150px;    
 }
 
 /* Mise en flex row du menu */
@@ -53,6 +56,7 @@ a:hover{
 
 
 
+
 /*---------------- SECTION 1 : ACCUEIL --------------------*/
 
 
@@ -61,8 +65,12 @@ a:hover{
     display: flex;
     justify-content: space-around; /*Centre horizontalement les elts menu avec de l'espace entre le bord de l'écran et les elts*/
     align-items: center;
-    margin-bottom: 150px;
-    padding-bottom: 120px;
+    margin-bottom: 50px;
+    padding-bottom: 200px;
+    margin-top : 50px;
+    
+    
+
 }
 
 /* Taille du logo avec le chat sur l'ordinateur */
@@ -75,19 +83,31 @@ a:hover{
 #presentation{
     width : 400px;
     text-align: justify;
+    
 }
 
 h1{
-    font-size: 50px;
+    font-size: 3em;
     font-weight: bold;
     color : #363636;
     font-weight : bold;
+    margin : 30px 0px;
+    
 }
 
-p{
+h2{
+    font-size: 3em;
+    font-weight: bold;
+    /* color : #363636; */
+    font-weight : bold;
+}
+
+.p1{
     font-family: 'Dosis', sans-serif;
     font-size: 25px;
-    color : #363636;    
+    color : #363636;   
+    margin : 30px 0px; 
+    
 }
 
 
@@ -142,17 +162,20 @@ input:focus{
 
 /* ------------------- SECTION 2, OUR PRODUCTS---------------- */
 
-/* Section 2 */
-#productFeatures{
+
+#section2{
 
     display : flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
 
 }
 
-#titleProducts{
+.titleProducts{
 
+
+    margin-top : 50px;
+    margin-bottom: 50px;
     text-align: center; /*Centrage du titre et du petit paragraphe en dessous*/ 
 
 }
@@ -163,13 +186,18 @@ input:focus{
 
 }
 
+.logoProduct{
+    margin-bottom: 20px;
+}
+
 /* Classe products qui correspond à chaque carré  */
 .products{
 
-    height : 350px;
-    width : 350px;    
+    height : 400px;
+    width : 400px;    
     display : flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;    
     border-radius: 15px;    
     color : white;
@@ -179,10 +207,10 @@ input:focus{
     margin-left: 20px;
     margin-right: 20px;
     margin-top : 50px;
+    margin-bottom: 250px;
     
 
-    padding-bottom: 120px;
-    padding-top : 30px;
+   
 
     transition: margin-top 1s ease; 
     
@@ -197,4 +225,56 @@ input:focus{
 
 .article {
     color : white;
+    padding : 0 15px;
 }
+
+/* SECTION 3 */
+
+#section3 {
+    padding-top : 50px;
+    background-color: #dbdbdb;
+    height : 900px;
+}
+
+
+
+
+/* SECTION 4 : MEMBRES DE L'EQUIPE */
+
+#section4{
+    display : flex;
+    flex-direction: column;
+    
+    margin-bottom: 100px;
+    height : 600px;
+}
+
+/* Parapgraphe sur l'équipe */
+
+#team{
+    text-align: center;
+}
+
+#members{
+    display : flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.photo{
+    height : 150px;
+    width : 150px;
+    border-radius: 100px;
+}
+
+b{
+    font-size: 2em;
+}
+
+/* Les petits sous titres au dessus des photos */
+.p2{
+    color : grey;
+    font-size: 0.8em;
+    margin-bottom: 50px;
+}
+
+/* Les chiffres de la team */
