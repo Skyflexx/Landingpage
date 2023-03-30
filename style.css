@@ -57,7 +57,7 @@ a:hover{
 
 
 
-/*---------------- SECTION 1 : ACCUEIL --------------------*/
+/*---------------- SECTION 1 : ACCUEIL -------------------------------------------------*/
 
 
 /* Mise en flex row pour la disposition des blocs l'un à côté de l'autre et centré verticalement */
@@ -68,9 +68,6 @@ a:hover{
     margin-bottom: 50px;
     padding-bottom: 200px;
     margin-top : 50px;
-    
-    
-
 }
 
 /* Taille du logo avec le chat sur l'ordinateur */
@@ -78,7 +75,7 @@ a:hover{
     width : 600px;
 }
 
-/*--------------- Paragraphe présentation et partie suscribtion ----------------------*/
+/*-Paragraphe présentation et partie suscribtion */
 
 #presentation{
     width : 400px;
@@ -160,7 +157,7 @@ input:focus{
 }
 
 
-/* ------------------- SECTION 2, OUR PRODUCTS---------------- */
+/* -------------------------------------- SECTION 2, OUR PRODUCTS------------------------------- */
 
 
 #section2{
@@ -223,36 +220,52 @@ input:focus{
     margin-top : 10px; /* Au hover, le margin passe de 50px à 10px en 1 seconde */
 }
 
-.article {
+.p2 {
     color : white;
     padding : 0 15px;
 }
 
-/* SECTION 3 */
+/* -------------------- SECTION 3 ---------------------------------- */
 
 #section3 {
     padding-top : 50px;
-    background-color: #dbdbdb;
+    background-color: #eceaea;
     height : 900px;
 }
 
 
 
 
-/* SECTION 4 : MEMBRES DE L'EQUIPE */
+/* ----------------------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
 
 #section4{
     display : flex;
     flex-direction: column;
     
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     height : 600px;
 }
 
-/* Parapgraphe sur l'équipe */
+/* Paragraphe sur l'équipe */
 
 #team{
     text-align: center;
+    padding : 0 30%;    
+}
+
+.p4{
+    font-family: 'Dosis', sans-serif;
+    color : grey;
+    font-size: 0.6em;
+    margin-top : 20px;
+    margin-bottom: 50px;
+}
+
+.p4b{ /*Le mot en dessous des chiffres */
+    font-size: 1em;
+    color : grey;
+    margin-bottom: 50px;
+
 }
 
 #members{
@@ -260,10 +273,39 @@ input:focus{
     justify-content: space-around;
     text-align: center;
 }
-.photo{
-    height : 150px;
-    width : 150px;
+
+.profilMember{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.zoom {
+    
+    overflow: hidden;
+    height : 200px;
+    width : 200px;
     border-radius: 100px;
+    
+}   /*.photo correspond à la taille de la photo. Imgzoom c'est la div dans laquelle est la photo. Les deux doivent être de la 
+    même taille pour que le hover fasse effet.*/
+
+.photo{
+
+    height : 200px;
+    width :200px;
+    border-radius: 100px;
+    transition : transform .5s ease; 
+    filter: grayscale(100%); /*Permet de mettre l'image en gris*/
+
+    /*La propriété transition se met sur la photo*/
+    
+}   
+
+.photo:hover{
+
+    transform: scale(1.1);   /*C'est un argument d'échelle. Au hover on zomme de 1.1 la taille initiale de .photo.*/
+    filter: grayscale(0%); /*Au hover, on met l'image en couleur classique*/
 }
 
 b{
@@ -271,10 +313,73 @@ b{
 }
 
 /* Les petits sous titres au dessus des photos */
-.p2{
-    color : grey;
-    font-size: 0.8em;
-    margin-bottom: 50px;
+
+
+
+
+h4{     /* Les chiffres de la team */
+    font-size: 2.5em;
+    margin-top : 50px;
 }
 
-/* Les chiffres de la team */
+
+
+/* ------------------------------- SECTION 5   LETS GET STARTED----------------------- */
+
+
+#section5 {
+    color : white;
+    display : flex;
+    align-items: center;
+    flex-direction: column;    
+    text-align: center;  
+    background-image : url("img/parallax.png");    
+    background-attachment: fixed; /*Permet l'effet de scroll*/  
+    height : 700px;
+}
+
+#start{
+
+    background-color: rgba(0, 0, 0, 0.5);
+    height : 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Centre verticalement */
+    align-items: center; /*Centre horizontalement */
+    width : 100%
+    
+}
+
+.p5{
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 4em;  
+    margin-bottom: 40px;
+    
+}
+
+.p5b{
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color :rgb(213, 213, 213);
+    font-size: 1.5em;  
+    margin : 0 50px;    
+}
+
+#btn2{ /*Le bouton get started*/
+
+    width : 150px;
+    height : 70px;
+    border : 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0); /*Transparence du background du bouton */
+    color : white;
+    margin : 40px auto;
+    font-weight: bold;    
+
+}
+
+#btn2:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
