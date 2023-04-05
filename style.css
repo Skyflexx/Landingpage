@@ -6,8 +6,7 @@
     font-family: 'Lora', serif;    
 }
 
-#page_principale{
-    
+#page_principale{    
     background-image : radial-gradient(rgb(139, 195, 245), #1294b8);    
 }
 
@@ -190,7 +189,6 @@ h2{
 
 /* Classe products qui correspond à chaque carré  */
 .product{
-
     height : 400px;
     width : 400px;    
     color : white;
@@ -203,10 +201,8 @@ h2{
     text-align: center;  
     margin : 50px 20px 250px 20px;
     transition: margin-top 1.3s ease-out;
-
     /* Bouge la box en modifiant le margin top. Ici on va le réduire pour donner la sensation
-    que la box monte */
-    
+    que la box monte */    
 }
 
 
@@ -217,6 +213,8 @@ h2{
 
 
 /* -------------------- SECTION 3 ---------------------------------- */
+
+
 
 #section3 {
     padding-top : 50px;
@@ -247,7 +245,8 @@ h2{
 #members{
     display : flex;
     justify-content: space-around;
-    text-align: center;
+    text-align: center;    
+    padding : 60px 0;
 }
 
 .profilMember{
@@ -261,27 +260,30 @@ h2{
     height : 200px;
     width : 200px;
     border-radius: 100px;    
-}   /*.photo correspond à la taille de la photo. Imgzoom c'est la div dans laquelle est la photo. Les deux doivent être de la 
+}  
+
+/*.photo correspond à la taille de la photo. Imgzoom c'est la div dans laquelle est la photo. Les deux doivent être de la 
     même taille pour que le hover fasse effet.*/
 
 .photo{
     height : 200px;
-    width :200px;
+    width : 200px;
     border-radius: 100px;
     transition : transform .5s ease; 
     filter: grayscale(1); /*Permet de mettre l'image en gris*/
-
     /*La propriété transition se met sur la photo*/    
 }   
 
 .photo:hover{
     transform: scale(1.1);   /*C'est un argument d'échelle. Au hover on zomme de 1.1 la taille initiale de .photo.*/
-    filter: grayscale(0); /*Au hover, on met l'image en couleur classique*/
+    filter: grayscale(0); /*Au hover, on met l'image en couleur classique*/   
 }
 
+
+
+
 b{
-    font-size: 2em;
-    
+    font-size: 2em;    
 }
 
 /* Les petits sous titres au dessus des photos */
@@ -322,7 +324,7 @@ h4{     /* Les chiffres de la team */
     justify-content: center; /*Centre verticalement */
     align-items: center; /*Centre horizontalement */  
     min-height: 100vh;
-    padding : 0 40vh; /* Pour que le background opaque prenne toute la place*/       
+    min-width : 100vh; /* Pour que le background opaque prenne toute la place*/       
 }
 
 
@@ -333,9 +335,8 @@ h4{     /* Les chiffres de la team */
     border-radius: 5px;
     background-color: rgb(0, 0, 0, 0); /*Transparence du background du bouton */
     color : white;
-    margin : 40px auto;
-    font-weight: bold;   
-    
+    /* margin : 40px auto; */
+    font-weight: bold;      
 }
 
 #btn2:hover {
@@ -371,3 +372,127 @@ h4{     /* Les chiffres de la team */
     display : flex;
     justify-content: space-around;
 }
+
+
+
+/* --------------- SECTION 7 ---------------- */
+
+
+#section7{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 60px;
+    min-width : 100vh;    
+}
+
+#div_sec7{
+    display : flex;
+    flex-direction: column;   
+}
+
+#creativity{
+    max-width: 40%;  
+    padding : 40px;    
+}
+
+#score {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;    
+}
+
+.scoreChiffres{
+    margin-right : 30px;
+}
+
+#learnmoreBtn{
+    font-size : 1.2em;
+    color : white;
+    width : 170px;
+    height : 50px;
+    border : none;
+    border-radius: 5px;
+    background-color: #3F8EFD;
+}
+
+
+/*--------------------- SECTION 8 -----------------------*/
+
+
+#section8{
+    background-color: rgba(194, 194, 194, 0.548);
+    display : flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+span{
+    color : #3F8EFD;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.price{
+    height : 570px;
+    width : 400px;    
+    color : rgb(0, 0, 0);
+    display : flex;
+    flex-direction: column;    
+    /* align-items: center; */
+    background-color: white;  
+    border-radius: 15px;        
+    text-align: center;  
+    margin : 50px 20px 250px 20px;
+    transition: margin-top 1.3s ease-out;
+    padding-top : 20px;
+    padding-bottom: 20px;   
+}
+
+
+
+.sale{
+    height : 570px;
+    width : 400px;    
+    color : rgb(0, 0, 0);
+    display : flex;
+    flex-direction: column;    
+    /* align-items: center; */
+    background-color: white;  
+    border-radius: 15px;        
+    text-align: center;  
+    margin : 20px 20px 250px 20px;
+    transition: margin-top 1.3s ease-out;
+    padding-top : 20px;
+    padding-bottom: 20px; 
+}
+
+
+
+.featuresPerPack{
+    color : black;
+    display : flex;
+    justify-content: space-between;    
+}
+
+.joinNowBtn{    
+    font-size : 1.2em;
+    color : white;
+    width : 170px;
+    height : 50px;
+    border : none;
+    border-radius: 5px;
+    background-color: #3F8EFD;
+    margin : auto;    
+}
+
+.leftColumn{
+    padding-left : 20px;
+    text-align : left;
+}
+
+.rightColumn{
+    padding-right : 20px;
+    text-align : right;
+}
+
