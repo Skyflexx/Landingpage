@@ -1,126 +1,141 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-<!-- google fonts -->
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Lora:wght@400;700&family=Space+Grotesk&display=swap" rel="stylesheet">
-<!-- / Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis&family=Lora:wght@400;700&family=Space+Grotesk&display=swap"
+        rel="stylesheet">
+    <!-- / Google fonts -->
+
+    <!-- Font Awesome - icons brands -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>Landing page</title>
 
 </head>
 
 <body>
 
-<div id ="wrapper1">
+    <div id="page_principale">
 
-    <!--  3 blocs dans le header, Logo, nav et facebook etc -->
+        <!--  3 blocs dans le header, Logo, nav et facebook etc -->
 
-    <!-- 2 blocs dans le main : 1 bloc présentation + suscribe et 1 bloc logo -->
+        <!-- 2 blocs dans le main : 1 bloc présentation + suscribe et 1 bloc logo -->
 
-<header>
+        <header id="header_home">
 
-    <!-- Logo de la grenouille -->
+            <!-- Logo de la grenouille -->
 
-    <div id="logo">
+            <div id="logo">
 
-        <img id ="frog" src="img/frognew.png">
+                <img id="frog" src="img/frognew.png">
+
+            </div>
+
+            <!-- Menu -->
+
+            <nav>
+                <ul>
+                    <li><a href="https://www.google.fr">HOME</a></li>
+                    <li><a href="https://www.google.fr">FEATURES</a></li>
+                    <li><a href="https://www.google.fr">CLIENT</a></li>
+                    <li><a href="https://www.google.fr">PRICING</a></li>
+                    <li><a href="https://www.google.fr">FAQ</a></li>
+                    <li><a href="https://www.google.fr">ABOUT</a></li>
+                    <li><a href="https://www.google.fr">BLOG</a></li>
+                    <li><a href="https://www.google.fr">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- logo facebook, twitter, instagram -->
+
+            <div id="socialmedia">
+
+                <a class="logomedia" href="https://www.google.fr" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="logomedia" href="https://www.google.fr" target="_blank">                    
+                    <i id="twitter" class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="logomedia" href="https://www.google.fr" target="_blank">
+                    <i id="insta" class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <!-------------------- SECTION 1 : ACCUEIL --------------->
+
+            <section id="accueil">
+
+                <!-- Présentation textuelle du site et partie souscription par mail -->
+
+                <div id="presentation">
+
+                    <h1>We are StartUp Creative Kucra Agency</h1>
+
+                    <p>
+                        Carefully crafter after analysing the needs of different industries and the design achieves a
+                        great balance between purpose & presentation
+                    </p>
+
+                    <form>
+                        <input id="mailField" type="text" value="Enter your Email " onfocus="this.value=''">
+                        <!-- onfocus="this.value" vide le champ quand on clique dessus -->
+                        <input id="btn1" type="button" value="SUSCRIBE">
+                    </form>
+
+                </div>
+
+                <!-- Insertion du logo avec le chat sur l'écran -->                
+
+                <img id="cat" src="illustration.svg">                
+
+            </section>
 
     </div>
-
-    <!-- Menu -->    
-
-    <nav>
-        <ul>
-            <li><a href="https://www.google.fr">HOME</a></li>
-            <li><a href="https://www.google.fr">FEATURES</a></li>
-            <li><a href="https://www.google.fr">CLIENT</a></li>
-            <li><a href="https://www.google.fr">PRICING</a></li>
-            <li><a href="https://www.google.fr">FAQ</a></li>
-            <li><a href="https://www.google.fr">ABOUT</a></li>
-            <li><a href="https://www.google.fr">BLOG</a></li>
-            <li><a href="https://www.google.fr">CONTACT</a></li>            
-        </ul>
-    </nav>
-
-    <!-- logo facebook, twitter, instagram -->
-
-    <div id="socialmedia">
-
-        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img id="facebook" onmouseover="changeFb()" onmouseout="resetFb()" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png"></a>
-        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img id="twitter" onmouseover="changeTwit()" onmouseout="resetTwit()" src="https://img.icons8.com/fluency-systems-regular/30/FFFFFF/twitter.png"></a>
-        <a class = "logomedia" href="https://www.google.fr" target="_blank"><img id="instagram" onmouseover="changeInsta()" onmouseout="resetInsta()" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png"></a>
-
-    </div>    
-
-</header>
-
-<main>
-
-    <!-------------------- SECTION 1 : ACCUEIL --------------->
-
-    <section id ="accueil">
-
-        <!-- Présentation textuelle du site et partie souscription par mail -->
-
-        <div id="presentation">
-
-            <h1>We are StartUp Creative Kucra Agency</h1>
-
-            <p class="p1">
-                Carefully crafter after analysing the needs of different industries and the design achieves a 
-                great balance between purpose & presentation
-            </p>
-
-            <form>
-                <input id = "mailField" type="text" value="Enter your Email " onfocus="this.value=''">
-                <!-- onfocus="this.value" vide le champ quand on clique dessus -->
-                <input id ="btn1" type="button" value="SUSCRIBE">
-            </form>
-
-        </div>
-
-        <!-- Insertion du logo avec le chat sur l'écran -->
-
-        <div id = "mainlogo">
-
-            <img id="cat"src="illustration.svg">
-
-        </div>
-
-    </section>
-
-</div>
 
 
     <!-- ----------- SECTION 2 : PRODUCT FEATURES ------------------- -->
 
     <section id="section2">
 
-        <div class="titleProducts">
+        <header class="titleProducts">
 
-            <h2>Products Features</h2>
+            <h1>Products Features</h1>
 
-            <p class="p1">
-                It is a long established fact that a reader will be of a page when established fact looking at its layout
+            <p>
+                It is a long established fact that a reader will be of a page when established fact looking at its
+                layout
             </p>
 
 
-        </div>
+        </header>
 
-        <div id="productsView">
+        <main id="productsView">
 
-            <div class="products">
+            <div class="product">
 
-                <img class="logoProduct" src="https://img.icons8.com/ios/50/FFFFFF/green-earth.png">
+                <figure>
+                    <img class="logoProduct" src="https://img.icons8.com/ios/50/FFFFFF/green-earth.png">
+                </figure>
 
-                <h3>Digital Design</h3>
+                <h2>Digital Design</h2>
 
-                <p class="p2">
+                <p class="paragraph_sec2">
 
                     Some quick example text to build on the card title and make up the bulk of the card the platform
 
@@ -128,148 +143,154 @@
 
             </div>
 
-            <div class="products">
+            <div class="product">
 
-                <img class="logoProduct" src="https://img.icons8.com/ios/50/FFFFFF/paint-brush.png">
+                <figure>
+                    <img class="logoProduct" src="https://img.icons8.com/ios/50/FFFFFF/paint-brush.png">
+                </figure>
 
-                <h3>Unlimited Colors</h3>
+                <h2>Unlimited Colors</h2>
 
-                <p class="p2">
+                <p class="paragraph_sec2">
 
-                    Credibly brand stonaads compliant user exteible services College Anibh icean euismod tincidunt laoreet.
-
-                </p>
-
-            </div>
-
-            <div class="products">
-
-                <img class="logoProduct" src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/50/FFFFFF/external-chess-pieces-games-smashingstocks-glyph-smashing-stocks.png">
-
-                <h3>Strategy Solutions</h3>
-                
-                <p class="p2">
-
-                   Separated they live in Bookmarks Grove right at the coast of the Semantics, a large ocean regelialia.
+                    Credibly brand stonaads compliant user exteible services College Anibh icean euismod tincidunt
+                    laoreet.
 
                 </p>
 
             </div>
 
-        </div>
+            <div class="product">
 
-        
+                <figure>
+                    <img class="logoProduct" src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/50/FFFFFF/external-chess-pieces-games-smashingstocks-glyph-smashing-stocks.png">
+                </figure>
+
+                <h2>Strategy Solutions</h2>
+
+                <p class="paragraph_sec2">
+                    Separated they live in Bookmarks Grove right at the coast of the Semantics, a large ocean
+                    regelialia.
+                </p>
+
+            </div>
+
+        </main>
+
+
 
     </section>
 
- <!------------------------ SECTION 3 : HOW IT WORKS ------------------------>
+    <!------------------------ SECTION 3 : HOW IT WORKS ------------------------>
 
     <section id="section3">
 
-        <div class="titleProducts">
+        <header class="titleProducts">
 
-            <h2>How it works ?</h2>
+            <h1>How it works ?</h1>
 
-            <p class="p1">
-                It is a long established fact that a reader will be of a page when established fact looking at its layout
+            <p>
+                It is a long established fact that a reader will be of a page when established fact looking at its
+                layout
             </p>
 
-    </div>
+        </header>
 
     </section>
 
 
-<!-- SECTION 4 : LE PERSONNEL -->
+    <!-- SECTION 4 : LE PERSONNEL -->
 
 
     <section id="section4">
 
         <!-- les 2 paragraphes -->
 
-        <div id ="team">
+        <header id="team">
 
-            <h4>We'r dynamic team of talented people of innovative & marketing expert<h4>
+            <h1>We'r dynamic team of talented people of innovative & marketing expert</h1>
 
-            <p class="p4">
-               To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. if several languages of
-               the resulting language.
+            <p>
+                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                words. if several languages of
+                the resulting language.
             </p>
 
-        </div>         
+        </header>
 
         <!-- Les membres -->
 
         <div id="members">
 
-            <div class ="profilMember">
+            <div class="profilMember">
 
                 <b>1499+</b>
 
-                <p class ="p4b">Complète projects</p>
+                <p class="p4b">Complète projects</p>
 
-                <figure class = "zoom">                  
+                <figure class="zoom">
 
-                <img class ="photo" src = "img/person1.png">
+                    <img class="photo" src="img/person1.png">
 
                 </figure>
 
                 <b>Anna g. Wilhite</b>
 
-                <p class ="p4b">CEO/Founder</p>
+                <p class="p4b">CEO/Founder</p>
 
             </div>
 
-            <div class ="profilMember">
+            <div class="profilMember">
 
                 <b>1080K</b>
 
-                <p class ="p4b">Satisfied Clients</p>
+                <p class="p4b">Satisfied Clients</p>
 
-                <figure class = "zoom">  
+                <figure class="zoom">
 
-                <img class ="photo" src = "img/person2.png">
+                    <img class="photo" src="img/person2.png">
 
                 </figure>
 
                 <b>William S. Blay</b>
 
-                <p class ="p4b">CTO/Co-Founder</p>
+                <p class="p4b">CTO/Co-Founder</p>
 
             </div>
 
-            <div class ="profilMember">
+            <div class="profilMember">
 
                 <b>608</b>
 
-                <p class ="p4b">Team Members</p>
+                <p class="p4b">Team Members</p>
 
-                <figure class = "zoom"> 
+                <figure class="zoom">
 
-                <img class ="photo" src = "img/person3.png">
+                    <img class="photo" src="img/person3.png">
 
                 </figure>
 
                 <b>Maria B. Morales</b>
 
-                <p class ="p4b">Web Designer</p>
+                <p class="p4b">Web Designer</p>
 
             </div>
 
-            <div class ="profilMember">
+            <div class="profilMember">
 
                 <b>252</b>
 
-                <p class ="p4b">Employee</p>
+                <p class="p4b">Employee</p>
 
-                <figure class = "zoom"> 
+                <figure class="zoom">
 
-                <img class ="photo" src = "img/person4.png">
+                    <img class="photo" src="img/person4.png">
 
                 </figure>
 
                 <b>Luke L. Johnston</b>
 
-                <p class ="p4b">Web Developper</p>
+                <p class="p4b">Web Developper</p>
 
             </div>
 
@@ -279,32 +300,65 @@
 
 
 
-    <!-- ----------- SECTION 5    GET STARTED  -->
+    <!-- ----------- SECTION 5    GET STARTED --------------------- -->
 
 
-    <section id ="section5">
+    <section id="section5">
 
-        <div id ="start">
+        <div  id="start">
 
-            <p class="p5">Let's get started with kucra</p>
+        <header>
 
-            <p class="p5b">
-               They are a good way to get you started if you want to build something 
-               similar or use from existing apps which will reduce the cost, effots and time
+            <h1 class="text_sec5">Let's get started with kucra</h1>
+
+        </header>
+
+            <p class="text_sec5">
+                They are a good way to get you started if you want to build something
+                similar or use from existing apps which will reduce the cost, effots and time
                 of the developpers.
             </p>
 
-            <input id ="btn2" type="button" value ="GET STARTED"></input>
+            <input id="btn2" type="button" value="GET STARTED"></input>
 
-        </div>        
+        </div>
 
 
     </section>
 
-</main>
 
-<script src="script.js"></script>
-    
+    <!-- --------------------------SECTION 6  WHAT YOUR CLIENT SAYS ---------------------- -->
+
+
+    <section id="section6">
+
+        <header>
+
+        <h1>What your client says</h1>
+
+        </header>
+
+        <p>The big oxmox advised her not to doso, because there were thousands of
+            bad Commas, wild Question Marks and devious pulvinar metus malestie sed Semikoli.
+
+        </p>
+
+        <div id="logo_clients">
+
+            <img class="marques" src="img/01.png">
+            <img class="marques" src="img/02.png">
+            <img class="marques" src="img/03.png">
+            <img class="marques" src="img/04.png">
+            <img class="marques" src="img/05.png">
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
