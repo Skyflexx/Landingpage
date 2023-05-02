@@ -227,9 +227,8 @@ h2{
 #section3 {
     padding-top : 50px;
     background-color: #eceaea;    
-    min-height: 100vh; /*La taille de la section s'adapte à ce qui est visible à l'écran et prend donc 100% de la taille visible à l'écran*/
+    min-height: 70vh; /*La taille de la section s'adapte à ce qui est visible à l'écran et prend donc 100% de la taille visible à l'écran*/
 }
-
 
 
 
@@ -350,27 +349,28 @@ h4{     /* Les chiffres de la team */
 #section5 {    
     color : white;
     display : flex;
-    align-items: center;
+    
     flex-direction: column;    
     text-align: center;  
     background-image : url("img/parallax.png"); 
     background-repeat: no-repeat;   
     background-attachment: fixed; /*Permet l'effet de scroll*/  
-    min-height: 100vh;
+    
 }
 
 .text_sec5{
-    color : white;
+    color : white;    
 }
 
 #start{
+    
     background-color: rgba(0, 0, 0, 0.5);    
     display: flex;
     flex-direction: column;
     justify-content: center; /*Centre verticalement */
     align-items: center; /*Centre horizontalement */  
-    min-height: 100vh;
-    min-width : 100vh; /* Pour que le background opaque prenne toute la place*/       
+    min-height: 50vh;
+  
 }
 
 
@@ -399,7 +399,7 @@ h4{     /* Les chiffres de la team */
     flex-direction: column;   
     align-items: center;
     text-align: center;
-    min-height : 100vh;
+    min-height : 70vh;
 }
 
 .marques{
@@ -429,7 +429,7 @@ h4{     /* Les chiffres de la team */
     align-items: center;
     justify-content: space-between;
     padding : 60px;
-    min-width : 100vh;    
+    min-height : 80vh;    
 }
 
 #div_sec7{
