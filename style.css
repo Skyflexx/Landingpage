@@ -260,7 +260,8 @@ h2{
 .profilMember{
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
+    
 }
 
 .zoom {    
@@ -268,6 +269,7 @@ h2{
     height : 200px;
     width : 200px;
     border-radius: 100px;    
+    margin : auto auto;
 }  
 
 /*.photo correspond à la taille de la photo. Imgzoom c'est la div dans laquelle est la photo. Les deux doivent être de la 
@@ -276,33 +278,72 @@ h2{
 .photo{
     height : 200px;
     width : 200px;
+    
     border-radius: 100px;
     transition : transform .5s ease; 
     filter: grayscale(1); /*Permet de mettre l'image en gris*/
     /*La propriété transition se met sur la photo*/    
 }   
 
-.photo:hover{
+.hover-logo:hover .photo{
     transform: scale(1.1);   /*C'est un argument d'échelle. Au hover on zomme de 1.1 la taille initiale de .photo.*/
     filter: grayscale(0); /*Au hover, on met l'image en couleur classique*/   
 }
 
-
-
-
 b{
     font-size: 2em;    
+    margin : 20px 0px;
+}
+
+.p4b{
+   
+    margin : 0 0;
+    
 }
 
 /* Les petits sous titres au dessus des photos */
-
-
-
 
 h4{     /* Les chiffres de la team */
     font-size: 2.5em;
     margin-top : 50px;
 }
+
+
+
+.logo-member{
+   
+    display : flex;
+    flex-direction: column;
+    position : relative;
+    left : -20px;    
+    top : 60px;
+    z-index: 1;
+    transition: 0.5s;   
+    opacity : 0;     
+    width : 20px;
+    height : 20px;
+    
+}
+
+.border-logo{
+    transition: 0.5s; /*Transition avant et après le hover*/    
+}
+
+.hover-logo:hover .logo-member{
+
+    left : 20px;
+    top : 80px;
+    z-index: 1;
+    opacity : 1;
+
+}
+
+.logo-link{
+    text-align: right;
+    padding : 3px 0px;
+}
+
+
 
 
 
@@ -555,8 +596,7 @@ footer{
     border-radius : 100px;
     padding : 10px 13px;
     margin : auto 20px;
-    transition: 0.5s; /*Transition avant et après le hover*/
-    
+    transition: 0.5s; /*Transition avant et après le hover*/    
 }
 
 .logo-footer{
