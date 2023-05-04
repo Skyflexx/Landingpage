@@ -8,12 +8,6 @@
         
 }
 
-body{
-
-   
-  
-}
-
 #page_principale{    
     background-image : radial-gradient(rgb(139, 195, 245), #1294b8);    
 }
@@ -694,99 +688,17 @@ footer{
     width : 25px;
     height : 25px;
   }
-   
-/* /////////////////////////////////////////////////////////////////////////////////////////// */
-/*////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/* ---------- FORMAT TABLETTE ---------------------------------------------------- */
+   
+/*///////////////////////////////////////////////////////////////////////////*/
+/* --------------------------- FORMAT TABLETTE -------------------------*/
+/*///////////////////////////////////////////////////////////////////////////*/
+
 
 @media only screen and (max-width: 900px) {
 
 
-/* C'est le menu qui empêche la bonne mise en place .*/
-
-
-
 /*---------------- SECTION 1 : ACCUEIL -------------------------------------------------*/
-
-
-
-
-/* -------------- SECTION 2, OUR PRODUCTS------------------------------- */
-
-.productsView {    
-    flex-direction: column-reverse;
-}
-
-
-
-
-/* -------------- SECTION 3 HOW IT WORKS---------------------------------- */
-
-
-
-
-
-
-/* ------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
-
-
-
-/* ----------------------- SECTION 5   LETS GET STARTED----------------------- */
-
-
-
-
-/* ---------------SECTION 6 WHAT YOUR CLIENT SAID -------------------------------- */
-
-#logo_clients{
-    display:block;
-}
-
-
-/* --------------- SECTION 7 WE ARE DIGITAL LANDING PAGE---------------- */
-
-
-
-
-/*--------------------- SECTION 8 PRICING -----------------------*/
-
-
-
-
-/*--------------------- SECTION 9 OUR BLOGS -----------------------*/
-
-.main-sec9{
-    flex-direction: column;    
-}
-
-
-
-
-/*--------------------- FOOTER -----------------------*/
-
-
-
-
-
-    
-
-
-
-}
-
-/* --------------------------- FORMAT TEL PORTABLE -------------------------*/
-
-/* Media querie pour un tel portable. Le but n'est pas de recopier le CSS mais de simplement indiquer les changements. Utiliser l'inspecteur pour check. */
-
-@media only screen and (max-width: 670px) {
-
-
-
-/*---------------- SECTION 1 : ACCUEIL -----------------------------------------*/
-
-
-
 
 /* ---------------------------- SECTION 2, OUR PRODUCTS------------------------------- */
 
@@ -796,6 +708,9 @@ footer{
 
 /* ------------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
 
+#members{
+    flex-direction: column;
+}
 
 /* ---------------------- SECTION 5   LETS GET STARTED----------------------- */
 
@@ -810,6 +725,131 @@ footer{
 /*--------------------- SECTION 9 OUR BLOGS -----------------------*/
 
 /*--------------------- FOOTER -----------------------*/
+
+
+}
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/* --------------------------- FORMAT TEL PORTABLE -------------------------*/
+/*///////////////////////////////////////////////////////////////////////////*/
+
+
+
+/* Media querie pour un tel portable. Le but n'est pas de recopier le CSS mais de simplement indiquer les changements. Utiliser l'inspecteur pour check. */
+
+@media only screen and (max-width: 670px) {
+
+    /*---------------- SECTION 1 : ACCUEIL -----------------------------------------*/
+#frog {
+    display : none;
+}
+
+#cat{
+    display: none;
+}
+#page_principale{
+    width : 100vh;
+}
+
+ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li{
+    margin-left : 5px;
+    margin-right : 5px;
+}
+
+
+
+#header_home {   
+    flex-direction: column;
+    border-top : 1px solid white;
+    border-bottom : 1px solid white;
+    padding : 5px 20px;
+}
+
+
+a{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+    /* -------------- SECTION 2, OUR PRODUCTS------------------------------- */
+
+.productsView {    
+    flex-direction: column-reverse;
+}
+
+#section2{
+    width: 100vh;
+}
+
+/* -------------- SECTION 3 HOW IT WORKS---------------------------------- */
+
+#section3{
+    width: 100vh;
+}
+
+/* ------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
+
+#section4{
+    width: 100vh;
+}
+
+/* ----------------------- SECTION 5   LETS GET STARTED----------------------- */
+
+#section5{
+    width: 100vh;
+}
+
+/* ---------------SECTION 6 WHAT YOUR CLIENT SAID -------------------------------- */
+
+#section6{
+    width: 100vh;
+}
+
+#logo_clients{
+    display:block;
+}
+
+/* --------------- SECTION 7 WE ARE DIGITAL LANDING PAGE---------------- */
+
+#section7{
+    width: 100vh;
+}
+
+/*--------------------- SECTION 8 PRICING -----------------------*/
+
+#section8{
+    width: 100vh;
+}
+
+/*--------------------- SECTION 9 OUR BLOGS -----------------------*/
+
+#section9{
+    width: 100vh;
+}
+.main-sec9{
+    flex-direction: column;    
+    align-items: center;
+}
+
+/*--------------------- FOOTER -----------------------*/
+
+footer{
+    width : 100vh;
+}
+
+
+
+
 
 
 
