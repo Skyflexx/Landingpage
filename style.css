@@ -371,8 +371,7 @@ h4{     /* Les chiffres de la team */
     background-color: rgba(0, 0, 0, 0.5);    
     display: flex;
     flex-direction: column;
-    padding-top : 70px;
-    /* justify-content: center;  */
+    padding-top : 70px;    
     align-items: center; /*Centre horizontalement */  
     min-height: 50vh;
   
@@ -721,7 +720,7 @@ footer{
     
     /*  Taille de la grenouille en PX car c'est un logo moyen qui doit rester à sa taille.*/
     #frog{
-        display : none;          
+        margin-left : 0;        
     }   
     
     
@@ -741,6 +740,10 @@ footer{
     #accueil{        
         justify-content: space-evenly; 
         padding-bottom : 0px;            
+    }
+
+    #cat {
+        padding : 0;
     }
     
     
@@ -788,6 +791,7 @@ h2{
 
 
 #section5 {    
+    
     color : white;
     display : flex;
     
@@ -801,21 +805,11 @@ h2{
 
 .text_sec5{
     color : white;
-    margin-bottom : 20px;
-    margin : auto 500px;    
+    justify-content: center; 
+    margin : auto 50px;    
 }
 
-#start{
-    
-    background-color: rgba(0, 0, 0, 0.5);    
-    display: flex;
-    flex-direction: column;
-    padding-top : 70px;
-    /* justify-content: center;  */
-    align-items: center; /*Centre horizontalement */  
-    min-height: 50vh;
-  
-}
+
 
 
 #btn2{ /*Le bouton get started*/
@@ -827,7 +821,8 @@ h2{
     color : white;
     margin-top : 20px;
     font-weight: bold; 
-    transition : 0.5s;     
+    transition : 0.5s;  
+    margin-bottom : 120px; 
 }
 
 #btn2:hover {
@@ -836,8 +831,10 @@ h2{
     margin-top : 15px; 
 }
 
-
-
+#section6{
+   
+    min-height : 50vh;
+}
     
 
 }
