@@ -486,6 +486,7 @@ h4{     /* Les chiffres de la team */
 }
 
 .price{
+    
     height : 570px;
     width : 400px;    
     color : rgb(0, 0, 0);
@@ -504,6 +505,7 @@ h4{     /* Les chiffres de la team */
 
 
 .sale{
+    position : relative;
     height : 570px;
     width : 400px;    
     color : rgb(0, 0, 0);
@@ -517,6 +519,20 @@ h4{     /* Les chiffres de la team */
     transition: margin-top 1.3s ease-out;
     padding-top : 20px;
     padding-bottom: 20px; 
+}
+
+.percentage{
+    position : absolute;
+    width : 70px;
+    height : 70px;    
+    background-color : #3F8EFD;
+    padding : 13px 10px;
+    color : white;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right : 0px;
+    top : 0px;       
+   
 }
 
 
