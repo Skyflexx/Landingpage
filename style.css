@@ -10,8 +10,7 @@
 
 body{
 
-   display: grid;
-   grid-template-columns: auto;
+   
   
 }
 
@@ -35,15 +34,13 @@ p{
 #header_home{
     display : flex;    
     justify-content: space-around; /*Centre horizontalement les elts menu avec de l'espace entre le bord de l'écran et les elts*/
-    align-items: center;
-     
+    align-items: center;     
 }
 
 /*  Taille de la grenouille en PX car c'est un logo moyen qui doit rester à sa taille.*/
 #frog{
     width : 150px;
     margin-left : 150px;   
-    
 }
 
 /* Mise en flex row du menu */
@@ -103,8 +100,7 @@ a:hover, .logo-header:hover{
 
 #presentation{
     width : 400px;
-    text-align: justify;
-    
+    text-align: justify;    
 }
 
 h1{
@@ -570,8 +566,7 @@ h4{     /* Les chiffres de la team */
 .main-sec9{
     min-height: 60vh;
     display : flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;    
 }
 
 .img-sec9{
@@ -684,11 +679,10 @@ footer{
     padding: 20px;
     margin-right : 20px;
     width : 25px;
-    height : 25px;        
-    
+    height : 25px;   
     background: #646060;
     border-radius: 100px;
-
+    float : right;
     position: sticky;
     bottom: 20px; 
     box-sizing: content-box;
@@ -708,134 +702,76 @@ footer{
 
 @media only screen and (max-width: 900px) {
 
-    
-    p{        
-        font-size: 2em;                   
-    }    
-    
-    
-    /*------------- MISE EN PAGE DU HEADER CONTENANT LE MENU -------------------------- */
-    
-    
-    
-    /*  Taille de la grenouille en PX car c'est un logo moyen qui doit rester à sa taille.*/
-    #frog{
-        margin-left : 0;        
-    }   
-    
-    
-    /* Retrait des puces et léger margin autour de chaque lien pour la clarté */
-    li{
-        font-size: 1.7em;        
-        margin-left : 10px;
-        margin-right : 10px;
-        margin-top : 10px;
-    }   
-    
-    
-    .logo-header { /*Logos font awesome avec une transition pour le changement de couleur*/       
-        font-size: 2em;         
-    }
 
-    #accueil{        
-        justify-content: space-evenly; 
-        padding-bottom : 0px;            
-    }
-
-    #cat {
-        padding : 0;
-    }
-    
-    
-    /*-Paragraphe présentation et partie suscribtion */   
-    
-    
-    h1{
-        font-size: 3em;        
-    }
-    
-       
-    
-    /* Formulaire pour le mail. le fond est transparent */
-    #mailField{
-        width : 160px;
-        height : 40px;        
-    }  
-    
-    /* -------------------------------------- SECTION 2, OUR PRODUCTS------------------------------- */
+/* C'est le menu qui empêche la bonne mise en place .*/
 
 
-h2{
-    font-size : 2.5em;    
-}
 
-.paragraph_sec2{    
-    font-size : 1.5em;    
+/*---------------- SECTION 1 : ACCUEIL -------------------------------------------------*/
+
+
+
+
+/* -------------- SECTION 2, OUR PRODUCTS------------------------------- */
+
+.productsView {    
+    flex-direction: column-reverse;
 }
 
 
 
 
-/* -------------------- SECTION 3 HOW IT WORKS---------------------------------- */
+/* -------------- SECTION 3 HOW IT WORKS---------------------------------- */
 
-#section3 {     
-    min-height: 50vh; /*La taille de la section s'adapte à ce qui est visible à l'écran et prend donc 100% de la taille visible à l'écran*/
+
+
+
+
+
+/* ------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
+
+
+
+/* ----------------------- SECTION 5   LETS GET STARTED----------------------- */
+
+
+
+
+/* ---------------SECTION 6 WHAT YOUR CLIENT SAID -------------------------------- */
+
+#logo_clients{
+    display:block;
 }
 
 
-/* ----------------------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
+/* --------------- SECTION 7 WE ARE DIGITAL LANDING PAGE---------------- */
 
 
 
-/* ------------------------------- SECTION 5   LETS GET STARTED----------------------- */
+
+/*--------------------- SECTION 8 PRICING -----------------------*/
 
 
-#section5 {    
-    
-    color : white;
-    display : flex;
-    
+
+
+/*--------------------- SECTION 9 OUR BLOGS -----------------------*/
+
+.main-sec9{
     flex-direction: column;    
-    text-align: center;  
-    background-image : url("img/parallax.png"); 
-    background-repeat: no-repeat;   
-    background-attachment: fixed; /*Permet l'effet de scroll*/  
+}
+
+
+
+
+/*--------------------- FOOTER -----------------------*/
+
+
+
+
+
     
-}
-
-.text_sec5{
-    color : white;
-    justify-content: center; 
-    margin : auto 50px;    
-}
 
 
-
-
-#btn2{ /*Le bouton get started*/
-    width : 150px;
-    height : 70px;
-    border : 2px solid white;
-    border-radius: 5px;
-    background-color: rgb(0, 0, 0, 0); /*Transparence du background du bouton */
-    color : white;
-    margin-top : 20px;
-    font-weight: bold; 
-    transition : 0.5s;  
-    margin-bottom : 120px; 
-}
-
-#btn2:hover {
-    background-color: rgb(255, 255, 255);
-    color : black;    
-    margin-top : 15px; 
-}
-
-#section6{
-   
-    min-height : 50vh;
-}
-    
 
 }
 
@@ -843,7 +779,49 @@ h2{
 
 /* Media querie pour un tel portable. Le but n'est pas de recopier le CSS mais de simplement indiquer les changements. Utiliser l'inspecteur pour check. */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 670px) {
+
+
+
+/*---------------- SECTION 1 : ACCUEIL -----------------------------------------*/
+
+
+
+
+/* ---------------------------- SECTION 2, OUR PRODUCTS------------------------------- */
+
+
+/* -------------------- SECTION 3 HOW IT WORKS---------------------------------- */
+
+
+/* ------------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
+
+
+/* ---------------------- SECTION 5   LETS GET STARTED----------------------- */
+
+
+/* ---------------SECTION 6 WHAT YOUR CLIENT SAID -------------------------------- */
+
+
+/* --------------- SECTION 7 WE ARE DIGITAL LANDING PAGE---------------- */
+
+/*--------------------- SECTION 8 PRICING -----------------------*/
+
+/*--------------------- SECTION 9 OUR BLOGS -----------------------*/
+
+/*--------------------- FOOTER -----------------------*/
+
+
+
+   
+
+    
+
+    
+   
+
+    
+
 
    
 
