@@ -190,7 +190,7 @@ h2{
     text-align: center; /*Centrage du titre et du petit paragraphe en dessous*/ 
 }
 
-#productsView{
+.productsView{
     display : flex; /*Le but est d'aligner les 3 box */
 }
 
