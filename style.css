@@ -40,7 +40,8 @@ p{
 /*  Taille de la grenouille en PX car c'est un logo moyen qui doit rester à sa taille.*/
 #frog{
     width : 150px;
-    margin-left : 150px;    
+    margin-left : 150px;   
+    
 }
 
 /* Mise en flex row du menu */
@@ -547,7 +548,7 @@ h4{     /* Les chiffres de la team */
     text-align : right;
 }
 
-/*--------------------- SECTION 9 -----------------------*/
+/*--------------------- SECTION 9 OUR BLOGS -----------------------*/
 
 .main-sec9{
     min-height: 60vh;
@@ -561,12 +562,54 @@ h4{     /* Les chiffres de la team */
     width : 400px;
     height : 300px;
     margin-bottom: 20px;
+    transition : 0.5s;
 }
 
-.p-sec9{
+
+
+
+.p-sec9{    
     font-size : 1.3em;
-    width : 400px;
+    width : 400px;    
 }
+
+.blog-effects{
+    
+    position : relative;
+      
+    height : 300px;
+    width : 400px;
+    border-radius: 15px;
+    background-color: black;
+    margin-bottom: 15px;
+    
+
+}
+
+
+.blog-text {
+    z-index: 1;
+    color : rgb(255, 255, 255);  
+    position : absolute;
+    top : 10px;
+    left : 10px;
+    opacity : 0;
+    transition : 0.5s;
+    
+}
+
+.img-sec9:hover{
+
+    filter: opacity(60%);   
+
+}
+
+.blog-effects:hover .blog-text{
+
+    opacity : 1;
+
+}
+
 
 
 /*--------------------- FOOTER -----------------------*/
