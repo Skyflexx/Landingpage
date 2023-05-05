@@ -4,8 +4,7 @@
     box-sizing: border-box;
     vertical-align: top;
     font-family: 'Lora', serif;
-    scroll-behavior: smooth; /* Pour le back to top */
-        
+    scroll-behavior: smooth; /* Pour le back to top */        
 }
 
 #page_principale{    
@@ -150,7 +149,6 @@ input:focus{
 
 #btn1:hover{
     background-color: #62b4d3;
-
 }
 
 
@@ -212,18 +210,13 @@ h2{
 }
 
 
-
 /* -------------------- SECTION 3 HOW IT WORKS---------------------------------- */
-
-
 
 #section3 {
     padding-top : 50px;
     background-color: #eceaea;    
     min-height: 70vh; /*La taille de la section s'adapte à ce qui est visible à l'écran et prend donc 100% de la taille visible à l'écran*/
 }
-
-
 
 /* ----------------------------------SECTION 4 : MEMBRES DE L'EQUIPE --------------------*/
 
@@ -240,7 +233,6 @@ h2{
     text-align: center;
     padding : 0 30%;    
 }
-
 
 #members{
     display : flex;
@@ -269,8 +261,7 @@ h2{
 
 .photo{
     height : 200px;
-    width : 200px;
-    
+    width : 200px;    
     border-radius: 100px;
     transition : transform .5s ease; 
     filter: grayscale(1); /*Permet de mettre l'image en gris*/
@@ -287,10 +278,8 @@ b{
     margin : 20px 0px;
 }
 
-.p4b{
-   
-    margin : 0 0;
-    
+.p4b{   
+    margin : 0 0;    
 }
 
 /* Les petits sous titres au dessus des photos */
@@ -300,10 +289,7 @@ h4{     /* Les chiffres de la team */
     margin-top : 50px;
 }
 
-
-
-.logo-member{
-   
+.logo-member{   
     display : flex;
     flex-direction: column;
     position : relative;
@@ -313,8 +299,7 @@ h4{     /* Les chiffres de la team */
     transition: 0.5s;   
     opacity : 0;     
     width : 20px;
-    height : 20px;
-    
+    height : 20px;    
 }
 
 .border-logo{
@@ -322,12 +307,10 @@ h4{     /* Les chiffres de la team */
 }
 
 .hover-logo:hover .logo-member{
-
     left : 20px;
     top : 80px;
     z-index: 1;
     opacity : 1;
-
 }
 
 .logo-link{
@@ -335,14 +318,11 @@ h4{     /* Les chiffres de la team */
     padding : 3px 0px;
 }
 
-
 /* ------------------------------- SECTION 5   LETS GET STARTED----------------------- */
-
 
 #section5 {    
     color : white;
-    display : flex;
-    
+    display : flex;    
     flex-direction: column;    
     text-align: center;  
     background-image : url("img/parallax.png"); 
@@ -356,15 +336,13 @@ h4{     /* Les chiffres de la team */
     margin-bottom : 20px;    
 }
 
-#start{
-    
+#start{    
     background-color: rgba(0, 0, 0, 0.5);    
     display: flex;
     flex-direction: column;
     padding-top : 70px;    
     align-items: center; /*Centre horizontalement */  
-    min-height: 50vh;
-  
+    min-height: 50vh;  
 }
 
 
@@ -383,8 +361,7 @@ h4{     /* Les chiffres de la team */
 #btn2:hover {
     background-color: rgb(255, 255, 255);
     color : black;    
-    margin-top : 15px; 
-   
+    margin-top : 15px;    
 }
 
 
@@ -417,10 +394,7 @@ h4{     /* Les chiffres de la team */
     justify-content: space-around;
 }
 
-
-
 /* --------------- SECTION 7 WE ARE DIGITAL LANDING PAGE---------------- */
-
 
 #section7{
     display: flex;
@@ -477,8 +451,7 @@ h4{     /* Les chiffres de la team */
     font-weight: bold;
 }
 
-.price{
-    
+.price{    
     height : 570px;
     width : 400px;    
     color : rgb(0, 0, 0);
@@ -523,8 +496,7 @@ h4{     /* Les chiffres de la team */
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     right : 0px;
-    top : 0px;       
-   
+    top : 0px;    
 }
 
 
@@ -580,17 +552,13 @@ h4{     /* Les chiffres de la team */
     width : 400px;    
 }
 
-.blog-effects{
-    
-    position : relative;
-      
+.blog-effects{    
+    position : relative;      
     height : 300px;
     width : 400px;
     border-radius: 15px;
     background-color: black;
-    margin-bottom: 15px;
-    
-
+    margin-bottom: 15px;  
 }
 
 
@@ -602,19 +570,14 @@ h4{     /* Les chiffres de la team */
     left : 10px;
     opacity : 0;
     transition : 0.5s;
-    
 }
 
 .img-sec9:hover{
-
-    filter: opacity(60%);   
-
+    filter: opacity(60%);  
 }
 
 .blog-effects:hover .blog-text{
-
     opacity : 1;
-
 }
 
 
@@ -622,17 +585,14 @@ h4{     /* Les chiffres de la team */
 /*--------------------- FOOTER -----------------------*/
 
 .border-footer:hover{
-
     border : 1.5px solid #fbd17e;   
-    
-}
+    }
 
 footer{
     min-height : 20vh;
     display : flex;
     flex-direction: column;
     align-items: center;
-    
     justify-content: space-evenly;
     background-color: #363636;
     color :#999999;
@@ -652,11 +612,9 @@ footer{
 }
 
 .logo-footer{
-    
     width : 15px;
     height : 20px;
     filter: invert(65%) sepia(0%) saturate(0%) hue-rotate(330deg) brightness(94%) contrast(92%); /* Permet d'obtenir la couleur voulue via https://codepen.io/sosuke/pen/Pjoqqp */
-
 }
 
 #logos-footer{
@@ -668,7 +626,6 @@ footer{
 /* SCROLL TO TOP BTN */
 
 .top {    
-
     place-self:end;
     text-decoration: none;
     padding: 20px;
@@ -680,8 +637,7 @@ footer{
     float : right;
     position: sticky;
     bottom: 20px; 
-    box-sizing: content-box;
-  
+    box-sizing: content-box;  
   }
 
   #top-img{
@@ -715,15 +671,12 @@ footer{
 }
 
 #header_home {
-    
     justify-content: center;
     align-items: center;
-
 }
 
 li{
     font-size: 1.5em;
-    
 }
 
 /* ---------------------------- SECTION 2, OUR PRODUCTS------------------------------- */
@@ -776,15 +729,12 @@ li{
 
 #start{
     padding-bottom: 50px;
-    min-height: 40vh;
-    
+    min-height: 40vh;    
 }
 
 .text_sec5 {
-    
     padding : 0 40px;
 }
-
 
 
 /* ---------------SECTION 6 WHAT YOUR CLIENT SAID -------------------------------- */
@@ -806,8 +756,25 @@ p{
 
 #section7{
     width: 100vh;
+    min-height: 60vh;
 }
 
+#learnmoreBtn {
+    margin : auto;
+}
+
+.p-sec7{
+    padding : 0;
+    text-align: center;
+}
+
+.scoreChiffres {    
+    text-align: center;
+}
+
+#div_sec7 {    
+    align-items: center;
+}
 /*--------------------- SECTION 8 PRICING -----------------------*/
 
 #section8{
@@ -829,7 +796,6 @@ p{
 }
 
 .main-sec9 {
-    
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -849,24 +815,18 @@ p{
     width : 100vh;
 }
 
-
 }
-
-
-
-
 
 /*///////////////////////////////////////////////////////////////////////////*/
 /* --------------------------- FORMAT TEL PORTABLE -------------------------*/
 /*///////////////////////////////////////////////////////////////////////////*/
-
-
 
 /* Media querie pour un tel portable. Le but n'est pas de recopier le CSS mais de simplement indiquer les changements. Utiliser l'inspecteur pour check. */
 
 @media only screen and (max-width: 670px) {
 
     /*---------------- SECTION 1 : ACCUEIL -----------------------------------------*/
+
 #frog {
     display : none;
 }
@@ -874,6 +834,7 @@ p{
 #cat{
     display: none;
 }
+
 #page_principale{
     width : 100vh;
 }
@@ -939,8 +900,7 @@ a{
     margin-top: 0;
 }
 
-.product{
-    
+.product{    
     transition:  1.3s;
     /* Bouge la box en modifiant le margin top. Ici on va le réduire pour donner la sensation
     que la box monte */    
@@ -986,8 +946,7 @@ a{
 
 .photo{
     height : 250px;
-    width : 250px;
-    
+    width : 250px;    
     border-radius: 150px;
     transition : transform .5s ease; 
     filter: grayscale(1); /*Permet de mettre l'image en gris*/
@@ -997,17 +956,14 @@ a{
 /* ----------------------- SECTION 5   LETS GET STARTED----------------------- */
 
 #section5{
-    width: 100vh;
-    
+    width: 100vh;    
 }
 
 #start{
-    padding-bottom: 50px;
-    
+    padding-bottom: 50px;    
 }
 
-.text_sec5 {
-    
+.text_sec5 {    
     padding : 0 40px;
 }
 
@@ -1075,10 +1031,8 @@ p{
 
 /*--------------------- FOOTER -----------------------*/
 
-footer{
-    
+footer{    
     width : 100vh;
-
 }
    
         
