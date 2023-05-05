@@ -765,7 +765,7 @@ li{
 }
 
 #members{
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* ---------------------- SECTION 5   LETS GET STARTED----------------------- */
@@ -774,11 +774,31 @@ li{
     width: 100vh;
 }
 
+#start{
+    padding-bottom: 50px;
+    min-height: 40vh;
+    
+}
+
+.text_sec5 {
+    
+    padding : 0 40px;
+}
+
+
 
 /* ---------------SECTION 6 WHAT YOUR CLIENT SAID -------------------------------- */
 
 #section6{
     width: 100vh;
+}
+
+#logo_clients{
+    display:block;
+}
+
+p{
+    padding : 0 40px;
 }
 
 
@@ -794,13 +814,40 @@ li{
     width: 100vh;
 }
 
+.price{
+    margin: 50px 20px 50px 20px;
+}
+
+.sale{
+    margin: 50px 20px 50px 20px;
+}
+
 /*--------------------- SECTION 9 OUR BLOGS -----------------------*/
 
 #section9{
     width: 100vh;
 }
 
+.main-sec9 {
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.p-sec9{
+    text-align: left;
+    padding : 0;
+}
+
+.blog{
+    margin-bottom: 50px;
+}
+
 /*--------------------- FOOTER -----------------------*/
+
+#footer{
+    width : 100vh;
+}
 
 
 }
