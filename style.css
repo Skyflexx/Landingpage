@@ -849,14 +849,11 @@ p{
 }
 
 ul{
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 10px;
+    
 }
 
 li{
-    margin-left : 5px;
-    margin-right : 5px;
+    
 }
 
 #presentation{
@@ -870,7 +867,8 @@ li{
 
 
 #header_home {   
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     border-top : 1px solid white;
     border-bottom : 1px solid white;
     padding : 5px 20px;
@@ -881,6 +879,42 @@ a{
     font-weight: bold;
     font-size: 1.5em;
 }
+
+nav{
+    display: none;
+}
+
+/*Menu burger*/
+
+/* Mise en flex row du menu */
+ul{
+    display : block;    
+}
+
+/* Retrait des puces et léger margin autour de chaque lien pour la clarté */
+li{    
+    font-size: 1.5em;    
+    margin-left : 0px;
+    margin-right : 0px;
+    text-align: center;
+}
+
+.sideNav{
+
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+    
+}
+
+
+
 
 
     /* -------------- SECTION 2, OUR PRODUCTS------------------------------- */
