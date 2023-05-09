@@ -822,9 +822,13 @@ p{
 
 }
 
+}
+
 /*///////////////////////////////////////////////////////////////////////////*/
 /* --------------------------- FORMAT TEL PORTABLE -------------------------*/
 /*///////////////////////////////////////////////////////////////////////////*/
+
+/* AJOUTER MENU BURGER*/
 
 /* Media querie pour un tel portable. Le but n'est pas de recopier le CSS mais de simplement indiquer les changements. Utiliser l'inspecteur pour check. */
 
@@ -927,6 +931,10 @@ a{
 
 #section4{
     width: 100vh;
+}
+
+#members {
+    flex-direction: column;
 }
 
 #team {
